@@ -29,7 +29,12 @@ Optionally to shutdown the computer on a daily schedule. 
 #### Mac
 * Right-click application and select ‘Show Package Contents’
 * Open Info.plist
-* Add key `Application UI Presentation Mode` with value `3 (all hidden)` to never show the system menu or dock over application
+* Add key `Application UI Presentation Mode` with value `3 (all hidden)` to never show the system menu or dock over application. The keys are sorted alphabetically so make sure to add it in the correct spot.
+```
+<key>LSUIPresentationMode</key>
+<integer>3</integer>
+```
+
 #### Linux
 * System Settings → Appearance → Behavior → Autohide Launcher → ON
 * Set Autohide Launcher Reveal Sensitivity to lowest
